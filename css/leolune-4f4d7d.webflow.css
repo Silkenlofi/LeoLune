@@ -714,7 +714,8 @@ body {
 }
 
 .movie-div.artwork {
-  background-image: url('../images/whiplash.jpg');
+  background-color: var(--light);
+  background-image: none;
   width: auto;
   height: 20vw;
   padding: 0;
@@ -722,7 +723,8 @@ body {
 }
 
 .movie-div.art {
-  background-image: url('../images/whiplash.jpg');
+  background-color: var(--light);
+  background-image: none;
   height: 14vw;
   padding: 0;
 }
