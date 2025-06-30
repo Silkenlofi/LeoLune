@@ -20,6 +20,22 @@
   display: grid;
 }
 
+.w-embed-youtubevideo {
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.w-embed-youtubevideo:empty {
+  min-height: 75px;
+  padding-bottom: 56.25%;
+}
+
 body {
   color: #333;
   background-color: #cbcbcb;
@@ -103,7 +119,7 @@ body {
   border-radius: 1.4vw;
   justify-content: center;
   align-items: center;
-  max-height: 10vw;
+  max-height: 12vw;
   padding: 2vw;
   transition: transform .33s;
   display: flex;
@@ -122,8 +138,8 @@ body {
 }
 
 .logo-flexd {
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
   flex-flow: row;
 }
 
@@ -174,6 +190,10 @@ body {
   font-size: 1.2vw;
   font-weight: 400;
   line-height: 1.2;
+}
+
+.para.smaller {
+  font-size: .9vw;
 }
 
 .para-flex {
@@ -256,6 +276,7 @@ body {
 .text-span {
   color: var(--dark);
   font-weight: 700;
+  text-decoration: none;
   transition: color .2s;
 }
 
@@ -269,8 +290,8 @@ body {
 }
 
 .div-block-5 {
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
   flex-flow: column;
   justify-content: space-between;
   align-items: flex-end;
@@ -453,6 +474,7 @@ body {
 
 .image-3.border-color-gray200 {
   border: 1px #e5e5e5;
+  border-radius: .5vw;
   box-shadow: 0 0 #0000, 0 1px .4px #00000008, 0 2px .8px #0000000a, 0 3.4px 1.6px #0000000b, 0 5.4px 2.9px #0000000c, 0 8.9px 5.3px #0000000c, 0 15.4px 10.4px #0000000d, 0 30.6px 22.8px #0000000e;
 }
 
@@ -842,6 +864,22 @@ body {
   line-height: 1.2;
 }
 
+.youtube {
+  border-radius: .5vw;
+  overflow: hidden;
+}
+
+.main-logo {
+  color: var(--dark);
+  max-width: 3vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.6vw;
+  font-weight: 600;
+  line-height: 1;
+}
+
 @media screen and (max-width: 991px) {
   .hide-tablet {
     display: none;
@@ -1093,6 +1131,14 @@ body {
     overflow: visible;
   }
 
+  .project_component {
+    border-radius: .5vw;
+  }
+
+  .image-3.border-color-gray200 {
+    border-radius: 4vw;
+  }
+
   .title-flex {
     padding-bottom: 6vw;
   }
@@ -1206,6 +1252,15 @@ body {
     margin-top: 2vw;
     font-size: 3vw;
   }
+
+  .image-5, .youtube {
+    border-radius: 4vw;
+  }
+
+  .main-logo {
+    max-width: 8vw;
+    font-size: 5vw;
+  }
 }
 
 #w-node-_45cca344-983e-136e-8d36-609026831e5c-944e3589 {
@@ -1219,3 +1274,5 @@ body {
 #w-node-_45cca344-983e-136e-8d36-609026831e6a-944e3589, #w-node-_81db19ef-2f4d-5724-5445-1d45c850f88b-944e3589, #w-node-fce2512b-467c-4937-e2e7-7e4114c12efc-944e3589, #w-node-bd940425-b685-bf9d-6c92-148b6f88320b-944e3589, #w-node-_3ef3bd86-f1c6-d0a9-e0e0-3e1d51d16bf4-944e3589, #w-node-_7ed53c74-5869-c5c2-caf6-c70316d23869-944e3589, #w-node-a2265512-4d43-14f0-a672-f97628d8bdf6-944e3589, #w-node-a7ef0a8f-9632-965f-3caf-92157ccc079a-944e3589, #w-node-f38027f2-8ea9-5610-dafa-6af764b1612f-944e3589, #w-node-_45cca344-983e-136e-8d36-609026831e71-944e3589, #w-node-_45cca344-983e-136e-8d36-609026831e78-944e3589, #w-node-_45cca344-983e-136e-8d36-609026831e7f-944e3589 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
+
+
