@@ -1,0 +1,1004 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 09 2025 19:02:11 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="68b72b5f75bb5485f0e8369a" data-wf-site="680b2633010c6ea4944e357a">
+<head>
+  <meta charset="utf-8">
+  <title>Artwork | Leo Lune</title>
+  <meta content="Visual Designer based in Gibraltar. looking to craft long lasting &amp; meaningful experiences across all mediums. Branding, web, and digital media." name="description">
+  <meta content="Artwork | Leo Lune" property="og:title">
+  <meta content="Visual Designer based in Gibraltar. looking to craft long lasting &amp; meaningful experiences across all mediums. Branding, web, and digital media." property="og:description">
+  <meta content="https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68c07834c01168e369b3f9de_leo%20opengraph.png" property="og:image">
+  <meta content="Artwork | Leo Lune" property="twitter:title">
+  <meta content="Visual Designer based in Gibraltar. looking to craft long lasting &amp; meaningful experiences across all mediums. Branding, web, and digital media." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/leolunelove.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+  /* Hide scrollbars but keep scrolling */
+  html, body {
+    -ms-overflow-style: none;     /* IE/Edge (legacy) */
+    scrollbar-width: none;        /* Firefox */
+    overflow: auto;               /* ensure scrolling still works */
+  }
+  /* WebKit (Chrome/Safari/Edge Chromium) */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  /* Global text selection colors */
+  ::selection {
+    background: #1f1f1f;
+    color: #f1f1f1;
+  }
+  /* Firefox needs its own selector for selection */
+  ::-moz-selection {
+    background: #1f1f1f;
+    color: #f1f1f1;
+  }
+</style>
+  <style>
+  /* Default state: keep panes "alive" so images continue loading */
+  .artwork-tab {
+    display: block !important;   /* Force Webflow to keep it rendered */
+    visibility: hidden;          /* Hide when inactive */
+    position: absolute;          /* Take it out of layout flow */
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  /* Active tab pane is visible and in layout */
+  .artwork-tab.w--tab-active {
+    visibility: visible;
+    position: relative;
+    height: auto;
+    overflow: visible;
+  }
+</style>
+</head>
+<body>
+  <section class="navigation">
+    <div class="naviation-container">
+      <a id="w-node-fe33cf78-bb86-a1b4-9918-78e0b0fa4cf3-f0e8369a" href="index.html" class="w-inline-block"><img src="images/ll-logo-solo.png" loading="lazy" alt="" class="logo"></a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link w-inline-block">
+          <div>Portfolio</div>
+        </a>
+        <a href="artwork.html" aria-current="page" class="nav-link w-inline-block w--current">
+          <div>Artwork</div>
+        </a>
+        <a href="about.html" class="nav-link w-inline-block">
+          <div>About</div>
+        </a>
+      </div>
+      <a id="w-node-_639cc0a7-0419-b5de-1965-f3fd377877dc-f0e8369a" href="https://forms.gle/FHEFo2afiotE3qTv7" target="_blank" class="footer-link nav w-inline-block">
+        <div>Contact form</div>
+      </a>
+    </div>
+  </section>
+  <section id="home" class="hero">
+    <div class="main-blick"><img src="images/ll-with-shadow.svg" loading="lazy" alt="" class="logo-main">
+      <div class="title-main-hold">
+        <div class="text-block">//     leo     lune</div>
+        <div class="text-block">//     artwork</div>
+      </div>
+      <h1 class="background-text">Artwork<br>Vault</h1>
+    </div>
+    <a href="#grid" class="arrow-link w-inline-block">
+      <div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+          <path fill="currentColor" d="m20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8z"></path>
+        </svg></div>
+    </a>
+  </section>
+  <div class="background-grid w-embed">
+    <style>
+  .animated-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(to right, black 1px, transparent 1px),
+      linear-gradient(to bottom, black 1px, transparent 1px);
+    background-size: 5vw 5vw; /* grid square size in vw */
+    background-position: 0 0;
+    animation: moveGrid 3s linear infinite;
+  }
+  @keyframes moveGrid {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 5vw 5vw; /* matches background-size so it loops seamlessly */
+    }
+  }
+</style>
+    <div class="animated-grid"></div>
+  </div>
+  <section id="grid" class="split5050">
+    <div class="div-block-9 white">
+      <div class="w-layout-vflex sticky-flex">
+        <div>A mix of personal explorations and professional projects.Some pieces are experiments — ideas without rules, where I play with visuals just to see where they go. Others are built with purpose, created for clients who want something lasting.</div>
+      </div>
+    </div>
+    <div class="div-block-9 black">
+      <div class="w-layout-vflex flex-block-9">
+        <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+          <div class="tabs-menu w-tab-menu">
+            <a data-w-tab="Tab 1" class="tab-artwork w-inline-block w-tab-link w--current">
+              <div>Portrait</div>
+            </a>
+            <a data-w-tab="Tab 2" class="tab-artwork w-inline-block w-tab-link">
+              <div>Square</div>
+            </a>
+            <a data-w-tab="Tab 3" class="tab-artwork w-inline-block w-tab-link">
+              <div>Vertical</div>
+            </a>
+          </div>
+          <div class="tabs-content w-tab-content">
+            <div data-w-tab="Tab 1" class="artwork-tab w-tab-pane w--tab-active">
+              <div class="gallery-spacing"></div>
+              <div class="artwork-grid">
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/promises-ig-p-500.png 500w, images/promises-ig-p-800.png 800w, images/promises-ig.png 1015w" alt="" src="images/promises-ig.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb15dfb0b818625f8b9ea8",
+      "origFileName": "promises ig.png",
+      "fileName": "promises ig.png",
+      "fileSize": 1157041,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb15dfb0b818625f8b9ea8_promises%20ig.png",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/shared-thread-4by5-p-500.jpg 500w, images/shared-thread-4by5-p-800.jpg 800w, images/shared-thread-4by5.jpg 1015w" alt="" src="images/shared-thread-4by5.jpg" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b8840f4f359291bb168fee",
+      "origFileName": "shared thread 4by5.jpg",
+      "fileName": "shared thread 4by5.jpg",
+      "fileSize": 1799307,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b8840f4f359291bb168fee_shared%20thread%204by5.jpg",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/two-way-p-500.jpg 500w, images/two-way-p-800.jpg 800w, images/two-way.jpg 1015w" alt="" src="images/two-way.jpg" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b884cb2a10df4ded9b59fd",
+      "origFileName": "two way.jpg",
+      "fileName": "two way.jpg",
+      "fileSize": 528977,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b884cb2a10df4ded9b59fd_two%20way.jpg",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1080px) 100vw, 1080px" srcset="images/from-the-heart-p-500.png 500w, images/from-the-heart-p-800.png 800w, images/from-the-heart.png 1080w" alt="" src="images/from-the-heart.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b885f938899bd3d9bc1370",
+      "origFileName": "from the heart.png",
+      "fileName": "from the heart.png",
+      "fileSize": 1300581,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b885f938899bd3d9bc1370_from%20the%20heart.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/till-death-do-us-part-ig-p-500.png 500w, images/till-death-do-us-part-ig-p-800.png 800w, images/till-death-do-us-part-ig.png 1015w" alt="" src="images/till-death-do-us-part-ig.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b886281f6fe8cf57c5e14b",
+      "origFileName": "till death do us part ig.png",
+      "fileName": "till death do us part ig.png",
+      "fileSize": 1299481,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b886281f6fe8cf57c5e14b_till%20death%20do%20us%20part%20ig.png",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/portrait-of-a-friend-4by5-p-500.png 500w, images/portrait-of-a-friend-4by5-p-800.png 800w, images/portrait-of-a-friend-4by5.png 1015w" alt="" src="images/portrait-of-a-friend-4by5.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b8864e705154597e83aaa0",
+      "origFileName": "portrait of a friend 4by5.png",
+      "fileName": "portrait of a friend 4by5.png",
+      "fileSize": 1191943,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b8864e705154597e83aaa0_portrait%20of%20a%20friend%204by5.png",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/peacekeeper-4by5-p-500.png 500w, images/peacekeeper-4by5-p-800.png 800w, images/peacekeeper-4by5.png 1015w" alt="" src="images/peacekeeper-4by5.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b8867ec6e754ebd25404f2",
+      "origFileName": "peacekeeper 4by5.png",
+      "fileName": "peacekeeper 4by5.png",
+      "fileSize": 482733,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b8867ec6e754ebd25404f2_peacekeeper%204by5.png",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/ultraviolet-4by5-p-500.png 500w, images/ultraviolet-4by5-p-800.png 800w, images/ultraviolet-4by5.png 1015w" alt="" src="images/ultraviolet-4by5.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b886bc9a8cbde0980d8028",
+      "origFileName": "ultraviolet 4by5.png",
+      "fileName": "ultraviolet 4by5.png",
+      "fileSize": 592803,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b886bc9a8cbde0980d8028_ultraviolet%204by5.png",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="(max-width: 1015px) 100vw, 1015px" srcset="images/kiss-me-ig-p-500.png 500w, images/kiss-me-ig-p-800.png 800w, images/kiss-me-ig.png 1015w" alt="" src="images/kiss-me-ig.png" loading="lazy" class="portrait-img _4by5">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b886e3e3619130ad4c4e38",
+      "origFileName": "kiss me ig.png",
+      "fileName": "kiss me ig.png",
+      "fileSize": 1196159,
+      "height": 1350,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b886e3e3619130ad4c4e38_kiss%20me%20ig.png",
+      "width": 1015,
+      "type": "image"
+    }
+  ],
+  "group": "portrait"
+}</script>
+                </a>
+              </div>
+            </div>
+            <div data-w-tab="Tab 2" class="artwork-tab w-tab-pane">
+              <div class="gallery-spacing"></div>
+              <div class="artwork-grid">
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/deadzone-smaller-p-500.png 500w, images/deadzone-smaller-p-800.png 800w, images/deadzone-smaller.png 1024w" alt="" src="images/deadzone-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb197ca15ebdc48b530aaa",
+      "origFileName": "deadzone smaller.png",
+      "fileName": "deadzone smaller.png",
+      "fileSize": 537186,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb197ca15ebdc48b530aaa_deadzone%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/pink-elegance-p-500.png 500w, images/pink-elegance-p-800.png 800w, images/pink-elegance.png 1080w" alt="" src="images/pink-elegance.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81b15bfcd0f56560d83ac",
+      "origFileName": "pink elegance.png",
+      "fileName": "pink elegance.png",
+      "fileSize": 1627450,
+      "height": 1080,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81b15bfcd0f56560d83ac_pink%20elegance.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/spacecowboy-smaller-p-500.png 500w, images/spacecowboy-smaller-p-800.png 800w, images/spacecowboy-smaller.png 1080w" alt="" src="images/spacecowboy-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81be9b6875411df9dcae1",
+      "origFileName": "spacecowboy smaller.png",
+      "fileName": "spacecowboy smaller.png",
+      "fileSize": 2705285,
+      "height": 1080,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81be9b6875411df9dcae1_spacecowboy%20smaller.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" id="w-node-_98540b75-6a20-a06a-26e9-d9aa6d938f2e-f0e8369a" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/till-death-do-us-part-smaller-p-500.png 500w, images/till-death-do-us-part-smaller-p-800.png 800w, images/till-death-do-us-part-smaller.png 1024w" alt="" src="images/till-death-do-us-part-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81cf3960c34a8b1ac464b",
+      "origFileName": "till death do us part smaller.png",
+      "fileName": "till death do us part smaller.png",
+      "fileSize": 3092125,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81cf3960c34a8b1ac464b_till%20death%20do%20us%20part%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/ultralight-portrait-smaller-p-500.png 500w, images/ultralight-portrait-smaller-p-800.png 800w, images/ultralight-portrait-smaller.png 1024w" alt="" src="images/ultralight-portrait-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81d637edf3481e7411fb3",
+      "origFileName": "ultralight portrait smaller.png",
+      "fileName": "ultralight portrait smaller.png",
+      "fileSize": 1099992,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81d637edf3481e7411fb3_ultralight%20portrait%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/smile-smaller-p-500.png 500w, images/smile-smaller-p-800.png 800w, images/smile-smaller.png 1024w" alt="" src="images/smile-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81e1fca235d2510157867",
+      "origFileName": "smile smaller.png",
+      "fileName": "smile smaller.png",
+      "fileSize": 1227130,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81e1fca235d2510157867_smile%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/peacekeeper-1by1-smaller-p-500.png 500w, images/peacekeeper-1by1-smaller-p-800.png 800w, images/peacekeeper-1by1-smaller.png 1024w" alt="" src="images/peacekeeper-1by1-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81e6c17504d1ae3390e44",
+      "origFileName": "peacekeeper 1by1 smaller.png",
+      "fileName": "peacekeeper 1by1 smaller.png",
+      "fileSize": 1741117,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81e6c17504d1ae3390e44_peacekeeper%201by1%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/ducks-and-bunnies-2-smaller-p-500.png 500w, images/ducks-and-bunnies-2-smaller-p-800.png 800w, images/ducks-and-bunnies-2-smaller.png 1024w" alt="" src="images/ducks-and-bunnies-2-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81eadf2b512d1a54cdb99",
+      "origFileName": "ducks and bunnies 2 smaller.png",
+      "fileName": "ducks and bunnies 2 smaller.png",
+      "fileSize": 1239454,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81eadf2b512d1a54cdb99_ducks%20and%20bunnies%202%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/shared-thread-5k-1by1-smaller-p-500.png 500w, images/shared-thread-5k-1by1-smaller-p-800.png 800w, images/shared-thread-5k-1by1-smaller.png 1024w" alt="" src="images/shared-thread-5k-1by1-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81f25ca6c95b7c1ac3181",
+      "origFileName": "shared thread 5k 1by1 smaller.png",
+      "fileName": "shared thread 5k 1by1 smaller.png",
+      "fileSize": 1907868,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81f25ca6c95b7c1ac3181_shared%20thread%205k%201by1%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/fallen-square-smaller-p-500.png 500w, images/fallen-square-smaller-p-800.png 800w, images/fallen-square-smaller.png 1024w" alt="" src="images/fallen-square-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81f67afbc46b07344cc53",
+      "origFileName": "fallen square smaller.png",
+      "fileName": "fallen square smaller.png",
+      "fileSize": 2590772,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81f67afbc46b07344cc53_fallen%20square%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/kiss-me-smaller-p-500.png 500w, images/kiss-me-smaller-p-800.png 800w, images/kiss-me-smaller.png 1024w" alt="" src="images/kiss-me-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b81f94401be82d9df0c81f",
+      "origFileName": "kiss me smaller.png",
+      "fileName": "kiss me smaller.png",
+      "fileSize": 2103013,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b81f94401be82d9df0c81f_kiss%20me%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/always-a-secret-smaller-p-500.png 500w, images/always-a-secret-smaller-p-800.png 800w, images/always-a-secret-smaller.png 1024w" alt="" src="images/always-a-secret-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b82013085768317d231d29",
+      "origFileName": "always a secret smaller.png",
+      "fileName": "always a secret smaller.png",
+      "fileSize": 1975476,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b82013085768317d231d29_always%20a%20secret%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/deathstare-1-smaller-p-500.png 500w, images/deathstare-1-smaller-p-800.png 800w, images/deathstare-1-smaller.png 1024w" alt="" src="images/deathstare-1-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b879262ce58290ea58cd93",
+      "origFileName": "deathstare-1 smaller.png",
+      "fileName": "deathstare-1 smaller.png",
+      "fileSize": 1768015,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b879262ce58290ea58cd93_deathstare-1%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/feeling-free-1-smaller-p-500.png 500w, images/feeling-free-1-smaller-p-800.png 800w, images/feeling-free-1-smaller.png 1024w" alt="" src="images/feeling-free-1-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b879698bda74e792ef00b3",
+      "origFileName": "feeling free-1 smaller.png",
+      "fileName": "feeling free-1 smaller.png",
+      "fileSize": 1942630,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b879698bda74e792ef00b3_feeling%20free-1%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/heart-like-hero-smaller-p-500.png 500w, images/heart-like-hero-smaller-p-800.png 800w, images/heart-like-hero-smaller.png 1024w" alt="" src="images/heart-like-hero-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b8799e9392d18222dd704b",
+      "origFileName": "heart like hero smaller.png",
+      "fileName": "heart like hero smaller.png",
+      "fileSize": 1136988,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b8799e9392d18222dd704b_heart%20like%20hero%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/Its-a-match-smaller-p-500.png 500w, images/Its-a-match-smaller-p-800.png 800w, images/Its-a-match-smaller.png 1024w" alt="" src="images/Its-a-match-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b879d7a69a75f989129e65",
+      "origFileName": "It's a match smaller.png",
+      "fileName": "It's a match smaller.png",
+      "fileSize": 1871061,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b879d7a69a75f989129e65_It%27s%20a%20match%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/jesus-is-king-smaller-p-500.png 500w, images/jesus-is-king-smaller-p-800.png 800w, images/jesus-is-king-smaller.png 1024w" alt="" src="images/jesus-is-king-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87a1976fc760efe75e9c7",
+      "origFileName": "jesus is king smaller.png",
+      "fileName": "jesus is king smaller.png",
+      "fileSize": 688538,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87a1976fc760efe75e9c7_jesus%20is%20king%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/just-the-two-of-us-smaller-p-500.png 500w, images/just-the-two-of-us-smaller-p-800.png 800w, images/just-the-two-of-us-smaller.png 1024w" alt="" src="images/just-the-two-of-us-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87a5c56a6973d0c79f8a5",
+      "origFileName": "just the two of us smaller.png",
+      "fileName": "just the two of us smaller.png",
+      "fileSize": 1626104,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87a5c56a6973d0c79f8a5_just%20the%20two%20of%20us%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/life-of-pablo-smaller-p-500.png 500w, images/life-of-pablo-smaller-p-800.png 800w, images/life-of-pablo-smaller.png 1024w" alt="" src="images/life-of-pablo-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87bbd5a7fe17dedd7c85d",
+      "origFileName": "life of pablo smaller.png",
+      "fileName": "life of pablo smaller.png",
+      "fileSize": 739038,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87bbd5a7fe17dedd7c85d_life%20of%20pablo%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/love-smaller-p-500.png 500w, images/love-smaller-p-800.png 800w, images/love-smaller-p-1080.png 1080w, images/love-smaller-p-1600.png 1600w, images/love-smaller-p-2000.png 2000w, images/love-smaller-p-2600.png 2600w, images/love-smaller-p-3200.png 3200w, images/love-smaller.png 5000w" alt="" src="images/love-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87bdb6402d31cfae09446",
+      "origFileName": "love smaller.png",
+      "fileName": "love smaller.png",
+      "fileSize": 3912283,
+      "height": 5000,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87bdb6402d31cfae09446_love%20smaller.png",
+      "width": 5000,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/party-small-p-500.png 500w, images/party-small-p-800.png 800w, images/party-small.png 1024w" alt="" src="images/party-small.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87c7a6402d31cfae0d6a2",
+      "origFileName": "party small.png",
+      "fileName": "party small.png",
+      "fileSize": 2406071,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87c7a6402d31cfae0d6a2_party%20small.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/please-focus-smaller-p-500.png 500w, images/please-focus-smaller-p-800.png 800w, images/please-focus-smaller.png 1024w" alt="" src="images/please-focus-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87e70c83574851bec8d32",
+      "origFileName": "please focus smaller.png",
+      "fileName": "please focus smaller.png",
+      "fileSize": 1770137,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87e70c83574851bec8d32_please%20focus%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/Red-smaller-p-500.png 500w, images/Red-smaller-p-800.png 800w, images/Red-smaller.png 1024w" alt="" src="images/Red-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b87e9825cd282621df4ba7",
+      "origFileName": "Red smaller.png",
+      "fileName": "Red smaller.png",
+      "fileSize": 1755951,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b87e9825cd282621df4ba7_Red%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/softie-smaller-p-500.png 500w, images/softie-smaller-p-800.png 800w, images/softie-smaller.png 1024w" alt="" src="images/softie-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b8823eae789e43da4d8aef",
+      "origFileName": "softie smaller.png",
+      "fileName": "softie smaller.png",
+      "fileSize": 1720665,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b8823eae789e43da4d8aef_softie%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/take-a-walk-smaller-p-500.png 500w, images/take-a-walk-smaller-p-800.png 800w, images/take-a-walk-smaller.png 1024w" alt="" src="images/take-a-walk-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b88264718d998de9d95293",
+      "origFileName": "take a walk smaller.png",
+      "fileName": "take a walk smaller.png",
+      "fileSize": 1507938,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b88264718d998de9d95293_take%20a%20walk%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/talk-that-black-smaller-p-500.png 500w, images/talk-that-black-smaller-p-800.png 800w, images/talk-that-black-smaller.png 1024w" alt="" src="images/talk-that-black-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b88297ce365715c2144c2d",
+      "origFileName": "talk that black smaller.png",
+      "fileName": "talk that black smaller.png",
+      "fileSize": 1362748,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b88297ce365715c2144c2d_talk%20that%20black%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/the-early-bird-smaller-p-500.png 500w, images/the-early-bird-smaller-p-800.png 800w, images/the-early-bird-smaller.png 1024w" alt="" src="images/the-early-bird-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b882c0b3a75987e32f2145",
+      "origFileName": "the early bird smaller.png",
+      "fileName": "the early bird smaller.png",
+      "fileSize": 1042859,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b882c0b3a75987e32f2145_the%20early%20bird%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/yandhi-smaller-p-500.png 500w, images/yandhi-smaller-p-800.png 800w, images/yandhi-smaller.png 1024w" alt="" src="images/yandhi-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b882e98d101c1d74b379d6",
+      "origFileName": "yandhi smaller.png",
+      "fileName": "yandhi smaller.png",
+      "fileSize": 465060,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b882e98d101c1d74b379d6_yandhi%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/Ye-smaller-p-500.png 500w, images/Ye-smaller-p-800.png 800w, images/Ye-smaller.png 1024w" alt="" src="images/Ye-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b8830da2bb1331c82a039e",
+      "origFileName": "Ye smaller.png",
+      "fileName": "Ye smaller.png",
+      "fileSize": 1064465,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b8830da2bb1331c82a039e_Ye%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/Youre-doing-great-smaller-p-500.png 500w, images/Youre-doing-great-smaller-p-800.png 800w, images/Youre-doing-great-smaller.png 1024w" alt="" src="images/Youre-doing-great-smaller.png" loading="lazy" class="portrait-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68b88331cd2177aaab5132e9",
+      "origFileName": "You're doing great smaller.png",
+      "fileName": "You're doing great smaller.png",
+      "fileSize": 64968,
+      "height": 1024,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68b88331cd2177aaab5132e9_You%27re%20doing%20great%20smaller.png",
+      "width": 1024,
+      "type": "image"
+    }
+  ],
+  "group": "square"
+}</script>
+                </a>
+              </div>
+            </div>
+            <div data-w-tab="Tab 3" class="artwork-tab w-tab-pane">
+              <div class="gallery-spacing"></div>
+              <div class="artwork-grid">
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/till-death-do-us-part-long-p-500.png 500w, images/till-death-do-us-part-long-p-800.png 800w, images/till-death-do-us-part-long.png 1080w" alt="" src="images/till-death-do-us-part-long.png" loading="lazy" class="vertical-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb1dd47284c461c000bd7e",
+      "origFileName": "till death do us part long.png",
+      "fileName": "till death do us part long.png",
+      "fileSize": 1980648,
+      "height": 1920,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb1dd47284c461c000bd7e_till%20death%20do%20us%20part%20long.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "vertical"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/frog-with-sunflower-9by16-p-500.png 500w, images/frog-with-sunflower-9by16-p-800.png 800w, images/frog-with-sunflower-9by16.png 1080w" alt="" src="images/frog-with-sunflower-9by16.png" loading="lazy" class="vertical-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb260f7da7d313068e255d",
+      "origFileName": "frog with sunflower 9by16.png",
+      "fileName": "frog with sunflower 9by16.png",
+      "fileSize": 127706,
+      "height": 1920,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb260f7da7d313068e255d_frog%20with%20sunflower%209by16.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "vertical"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/peacekeeper-9by16-p-500.png 500w, images/peacekeeper-9by16-p-800.png 800w, images/peacekeeper-9by16.png 1080w" alt="" src="images/peacekeeper-9by16.png" loading="lazy" class="vertical-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb2638d3eb74218bd3bc22",
+      "origFileName": "peacekeeper 9by16.png",
+      "fileName": "peacekeeper 9by16.png",
+      "fileSize": 568224,
+      "height": 1920,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb2638d3eb74218bd3bc22_peacekeeper%209by16.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "vertical"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/ultraviolet-portrait-9by6-p-500.png 500w, images/ultraviolet-portrait-9by6-p-800.png 800w, images/ultraviolet-portrait-9by6.png 1080w" alt="" src="images/ultraviolet-portrait-9by6.png" loading="lazy" class="vertical-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb265817340f158450a7fc",
+      "origFileName": "ultraviolet portrait 9by6.png",
+      "fileName": "ultraviolet portrait 9by6.png",
+      "fileSize": 659795,
+      "height": 1920,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb265817340f158450a7fc_ultraviolet%20portrait%209by6.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "vertical"
+}</script>
+                </a>
+                <a href="#" class="w-inline-block w-lightbox"><img sizes="100vw" srcset="images/two-way-9by16-p-500.png 500w, images/two-way-9by16-p-800.png 800w, images/two-way-9by16.png 1080w" alt="" src="images/two-way-9by16.png" loading="lazy" class="vertical-img">
+                  <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "68bb265817340f158450a7fc",
+      "origFileName": "ultraviolet portrait 9by6.png",
+      "fileName": "ultraviolet portrait 9by6.png",
+      "fileSize": 659795,
+      "height": 1920,
+      "url": "https://cdn.prod.website-files.com/680b2633010c6ea4944e357a/68bb265817340f158450a7fc_ultraviolet%20portrait%209by6.png",
+      "width": 1080,
+      "type": "image"
+    }
+  ],
+  "group": "vertical"
+}</script>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer artwork">
+    <div class="footer-block">
+      <div class="w-layout-vflex top-footer-block">
+        <div class="text-block-2">You scrolled this far, Let’s talk?</div>
+        <div class="footer-buttons">
+          <a href="https://forms.gle/FHEFo2afiotE3qTv7" target="_blank" class="footer-link w-inline-block">
+            <div>Contact form</div>
+          </a>
+          <a href="https://calendly.com/leolunelove/30min" target="_blank" class="footer-link white w-inline-block">
+            <div>Book a call</div>
+          </a>
+        </div>
+      </div>
+      <div class="inner-footer-div">
+        <div>I’m available and provide a large range of services.</div>
+        <div class="div-block-8">
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Experimental</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Packaging Design</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Visual Identity / Branding</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Website Design</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Brand Guidelines</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Landing Pages</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>Webflow Development</div>
+          </div>
+          <div class="w-layout-vflex inner-footer-tag">
+            <div class="icon-embed-xxsmall-2 w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+              </svg></div>
+            <div>UX/UI Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-block-credit">
+      <div class="footer-under-text">© 2025 Leo Lune. All rights reserved</div>
+      <div id="w-node-_14f23ed3-02c8-0c26-b26e-ff46b48c3f1f-f0e8369a">
+        <a href="#home" class="w-inline-block"><img src="images/ll-dark.svg" loading="lazy" alt="" class="footer-logo"></a>
+      </div>
+      <div id="w-node-_2505ef83-0fb9-335b-3fb1-5ccd075161d0-f0e8369a" class="w-layout-vflex flex-block-6">
+        <a href="https://x.com/leolunelove" target="_blank" class="footer-under-text">Twitter</a>
+        <a href="https://www.linkedin.com/in/leolune/" target="_blank" class="footer-under-text">LinkedIn</a>
+        <a href="https://linktr.ee/leolune" target="_blank" class="footer-under-text">LinkTree</a>
+      </div>
+    </div>
+    <div>
+      <a href="privacy.html" class="footer-under-text privacy">Privacy Policy</a>
+    </div>
+  </section>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=680b2633010c6ea4944e357a" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
