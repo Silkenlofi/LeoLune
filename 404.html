@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 17 2025 16:42:32 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 17 2025 17:13:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="682df207327970dbf70764f2" data-wf-site="680b2633010c6ea4944e357a">
 <head>
   <meta charset="utf-8">
@@ -40,6 +40,48 @@
     color: #f1f1f1;
   }
 </style>
+  <style>
+  /* Only fade the content, not the navigation */
+  .page-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .page-transition.fade-in {
+    opacity: 1;
+  }
+  .page-transition.fade-out {
+    opacity: 0;
+  }
+</style>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const content = document.querySelector("body > :not(.navigation)");
+    if (content) {
+      content.classList.add("page-transition", "fade-in");
+    }
+    document.querySelectorAll("a").forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#") || link.target === "_blank") return;
+      link.addEventListener("click", (e) => {
+        if (!content) return;
+        e.preventDefault();
+        content.classList.remove("fade-in");
+        content.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // match CSS transition
+      });
+    });
+  });
+  // Handle browser back/forward cache
+  window.addEventListener("pageshow", (event) => {
+    const content = document.querySelector("body > :not(.navigation)");
+    if (event.persisted && content) {
+      content.classList.remove("fade-out");
+      content.classList.add("fade-in");
+    }
+  });
+</script>
 </head>
 <body>
   <div class="utility-page-wrap">
