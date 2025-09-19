@@ -444,6 +444,8 @@ body {
 
 .grid-show._3flow {
   z-index: 100;
+  transform: scale3d(1none, 1none, 1none);
+  transform-style: preserve-3d;
   background-color: #fddd00;
   max-width: 44.448vw;
   height: 25.002vw;
@@ -452,16 +454,26 @@ body {
   overflow: hidden;
 }
 
+.grid-show._3flow:hover {
+  transform: none;
+}
+
 .info-block-grid {
   z-index: 1;
   grid-column-gap: .2vw;
   grid-row-gap: .2vw;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
   background-color: #1f1f1f80;
   flex-flow: column;
   padding: 1.947vw;
   display: flex;
   position: absolute;
   inset: auto 0% 0%;
+}
+
+.info-block-grid.clotilde {
+  background-color: #1f1f1fcc;
 }
 
 .bento-blk-text {
@@ -1966,7 +1978,15 @@ body {
   justify-self: end;
 }
 
-#w-node-_92294206-c777-2ee7-5aad-921facc9a3bf-944e3589, #w-node-df74910b-b257-1723-0286-4504daaa5e54-944e3589, #w-node-_914faee6-489d-43b3-7205-e1d1a0f675e2-944e3589, #w-node-f9a0e991-c53a-e989-e660-b163ea0abcdf-944e3589, #w-node-_26e036f0-560a-fd67-3265-edf061fbe2e6-944e3589, #w-node-_3e36c57b-fe7f-a9f4-4156-05ecba160930-944e3589, #w-node-_2f98a1e5-36c6-3fee-751d-d04e943ca3a9-944e3589 {
+#w-node-_92294206-c777-2ee7-5aad-921facc9a3bf-944e3589, #w-node-df74910b-b257-1723-0286-4504daaa5e54-944e3589, #w-node-_914faee6-489d-43b3-7205-e1d1a0f675e2-944e3589, #w-node-f9a0e991-c53a-e989-e660-b163ea0abcdf-944e3589, #w-node-dc5aa60f-003d-dc90-a1f3-95568c57df0e-944e3589, #w-node-_3e36c57b-fe7f-a9f4-4156-05ecba160930-944e3589 {
+  justify-self: stretch;
+}
+
+#w-node-_3e36c57b-fe7f-a9f4-4156-05ecba160937-944e3589 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_777372ff-bfb3-98ee-83f3-8c90ea627bef-944e3589, #w-node-_26e036f0-560a-fd67-3265-edf061fbe2e6-944e3589, #w-node-_91223841-5574-a245-3b36-6190d86f8e3d-944e3589 {
   justify-self: stretch;
 }
 
@@ -2147,6 +2167,22 @@ body {
 }
 
 #w-node-_2505ef83-0fb9-335b-3fb1-5ccd075161d0-877375e4 {
+  justify-self: end;
+}
+
+#w-node-ed4edbfa-5150-d4ca-c3be-d7cf494eae7d-a900533f {
+  justify-self: start;
+}
+
+#w-node-_89ea2368-72c6-1603-7b42-d19dd3b8188e-a900533f, #w-node-d73be951-aa10-a8e7-1d35-9c2332d9002e-a900533f {
+  justify-self: end;
+}
+
+#w-node-_14f23ed3-02c8-0c26-b26e-ff46b48c3f1f-a900533f {
+  justify-self: center;
+}
+
+#w-node-_2505ef83-0fb9-335b-3fb1-5ccd075161d0-a900533f {
   justify-self: end;
 }
 
