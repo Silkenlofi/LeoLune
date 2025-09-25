@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Sep 22 2025 00:03:25 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Sep 25 2025 09:19:25 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="680b2633010c6ea4944e3589" data-wf-site="680b2633010c6ea4944e357a">
 <head>
   <meta charset="utf-8">
@@ -110,17 +110,97 @@
     </div>
   </section>
   <section id="home" class="hero">
-    <div class="main-blick"><img src="images/ll-with-shadow.svg" loading="lazy" alt="" class="logo-main">
+    <div class="main-blick"><img src="images/ll-with-shadow.svg" loading="lazy" alt="" class="logo-main larger-on-hover">
       <div class="title-main-hold">
-        <div class="text-block">//     leo     lune</div>
-        <div class="text-block">//     portfolio</div>
+        <div class="text-block letter-spacing-animation">//     leo     lune</div>
+        <div class="text-block letter-spacing-animation">//     portfolio</div>
       </div>
-      <h1 class="background-text">Visual<br>Designer</h1>
+      <h1 class="background-text visual-designer">Visual<br>Designer</h1>
+      <div class="scramble-text-embed w-embed w-script">
+        <script>
+class Unscramble {
+  constructor(el) {
+    this.el = el;
+    this.chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+    this.finalText = el.innerText; // take whatever text you typed in Webflow
+    this.current = Array.from(this.finalText).map(c => (c === " " || c === "\n") ? c : this.randomChar());
+    this.update();
+    this.animate();
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)];
+  }
+  update() {
+    // Rebuild the string exactly, spaces and line breaks included
+    this.el.innerText = this.current.join("");
+  }
+  animate() {
+    let done = true;
+    this.current = this.current.map((c, i) => {
+      if (this.finalText[i] === " " || this.finalText[i] === "\n") {
+        return this.finalText[i]; // keep spaces and line breaks intact
+      }
+      if (c !== this.finalText[i]) {
+        done = false;
+        // small chance to lock to final letter, else random char
+        return Math.random() < 0.2 ? this.finalText[i] : this.randomChar();
+      }
+      return c;
+    });
+    this.update();
+    if (!done) {
+      setTimeout(() => this.animate(), 50); // speed of scrambling
+    }
+  }
+}
+// Grab your Webflow text block
+const el = document.querySelector(".background-text.visual-designer");
+new Unscramble(el);
+</script>
+      </div>
     </div>
     <a href="#portfolio" class="arrow-link w-inline-block">
-      <div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+      <div class="arrow-icon-embed bounce w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
           <path fill="currentColor" d="m20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8z"></path>
         </svg></div>
+      <div class="arrow-bounce-embed w-embed">
+        <style>
+/* Bounce animation using vw for desktop */
+@keyframes bounce-small {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-0.5vw);
+  }
+  60% {
+    transform: translateY(-0.3vw);
+  }
+}
+/* Apply the animation to the arrow */
+.arrow-icon-embed.bounce {
+  display: inline-block;
+  animation: bounce-small 1.2s infinite ease-in-out;
+}
+/* Increase bounce on smaller screens (mobile) */
+@media (max-width: 768px) {
+  @keyframes bounce-small-mobile {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-2vw); /* bigger bounce on mobile */
+    }
+    60% {
+      transform: translateY(-1vw);
+    }
+  }
+  .arrow-icon-embed.bounce {
+    animation: bounce-small-mobile 1.2s infinite ease-in-out;
+  }
+}
+</style>
+      </div>
     </a>
   </section>
   <section id="portfolio" class="bento-grid">
@@ -187,7 +267,7 @@
           <div class="bento-blk-text secondary">Web Development</div>
         </div>
       </a>
-      <a id="w-node-dc5aa60f-003d-dc90-a1f3-95568c57df0e-944e3589" href="portfolio/acquarius.html" class="grid-show square coverbat w-inline-block">
+      <a id="w-node-dc5aa60f-003d-dc90-a1f3-95568c57df0e-944e3589" href="portfolio/acquarius.html" class="grid-show square w-inline-block">
         <div class="info-block-grid">
           <div class="bento-blk-text">Acquarius</div>
           <div class="bento-blk-text secondary">Web Development</div>
