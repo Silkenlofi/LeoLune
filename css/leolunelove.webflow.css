@@ -266,13 +266,20 @@ body {
   grid-column-gap: .417vw;
   grid-row-gap: .417vw;
   background-color: var(--dark);
+  transform-style: preserve-3d;
   border-radius: 200vw;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding: .417vw;
+  transition: transform .3s;
   display: flex;
+  transform: scale3d(.9, .9, .9);
+}
+
+.nav-menu:hover {
+  transform: none;
 }
 
 .nav-menu.port {
@@ -290,6 +297,7 @@ body {
   font-size: 1vw;
   line-height: 1.2;
   text-decoration: none;
+  transition: background-color .3s;
 }
 
 .nav-link:hover {
@@ -439,7 +447,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 4.427vw;
-  padding-bottom: 8vw;
+  padding-bottom: 6vw;
   display: flex;
 }
 
@@ -575,6 +583,8 @@ body {
   width: 100%;
   padding: 3.333vw;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-block-2 {
@@ -594,10 +604,12 @@ body {
 }
 
 .top-footer-block {
+  z-index: 1;
   grid-column-gap: 1.25vw;
   grid-row-gap: 1.25vw;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .footer-link {
@@ -663,6 +675,7 @@ body {
 }
 
 .inner-footer-div {
+  z-index: 1;
   grid-column-gap: 2.5vw;
   grid-row-gap: 2.5vw;
   background-color: var(--less-dark);
@@ -677,6 +690,7 @@ body {
   font-size: 1.25vw;
   line-height: 1.2;
   display: flex;
+  position: relative;
   overflow: hidden;
 }
 
@@ -711,7 +725,7 @@ body {
 .footer-block-credit {
   grid-column-gap: 3.333vw;
   grid-row-gap: 3.333vw;
-  background-color: var(--less-light);
+  background-color: #fff;
   border-radius: 1.5vw;
   flex-flow: column;
   grid-template-rows: auto;
@@ -1532,8 +1546,110 @@ body {
   flex: 1;
 }
 
-.arrow-bounce-embed, .scramble-text-embed {
+.arrow-bounce-embed, .scramble-text-embed, .grid-slide-embed {
   display: none;
+}
+
+.div-block-10 {
+  z-index: 0;
+  filter: blur(5vw);
+  background-color: #000;
+  border-radius: 200vw;
+  width: 50vw;
+  height: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  inset: auto 0% -31vw;
+}
+
+.footer-code-embed {
+  display: none;
+}
+
+.stars-embed {
+  z-index: 0;
+  margin-bottom: 0;
+  position: absolute;
+  inset: 0%;
+}
+
+.second-footer-code-embed, .underline-animation-4-links {
+  display: none;
+}
+
+.contact-form-buttom {
+  border: .1vw solid var(--less-dark);
+  background-color: var(--dark);
+  opacity: 1;
+  color: var(--light);
+  transform-style: preserve-3d;
+  border-radius: 100vw;
+  padding: .8vw 1.25vw;
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform .3s;
+  transform: scale3d(.9, .9, .9);
+}
+
+.contact-form-buttom:hover {
+  border-color: var(--less-dark);
+  background-color: var(--dark);
+  opacity: 1;
+  color: var(--light);
+  transform: scale(1);
+}
+
+.contact-form-buttom.w--current {
+  opacity: 1;
+}
+
+.contact-form-buttom.white {
+  border-color: var(--less-light);
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.contact-form-buttom.white:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.contact-form-buttom.nav {
+  grid-column-gap: .8vw;
+  grid-row-gap: .8vw;
+  border-color: var(--less-light);
+  background-color: var(--dark);
+  box-shadow: none;
+  color: var(--light);
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow .4s;
+  display: flex;
+}
+
+.contact-form-buttom.nav:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  box-shadow: 0 0 #0000, 0 1px .4px #00000008, 0 2px .8px #0000000a, 0 3.4px 1.6px #0000000b, 0 5.4px 2.9px #0000000c, 0 8.9px 5.3px #0000000c, 0 15.4px 10.4px #0000000d, 0 30.6px 22.8px #0000000e;
+}
+
+.contact-form-buttom.nav.outline {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.contact-form-buttom.nav.outline:hover {
+  border-color: var(--dark);
+}
+
+.contact-form-button-shine {
+  z-index: -1;
+  opacity: .03;
+  position: fixed;
+  inset: 0%;
 }
 
 @media screen and (max-width: 991px) {
@@ -2030,6 +2146,25 @@ body {
     border-radius: 1vw;
     padding: 2vw 4vw;
     font-size: 4vw;
+  }
+
+  .contact-form-buttom {
+    border-width: .4vw;
+    padding: 1vw 2vw;
+    font-size: 2.5vw;
+  }
+
+  .contact-form-buttom.white {
+    font-size: 2.5vw;
+  }
+
+  .contact-form-buttom.smaller {
+    font-size: 2vw;
+  }
+
+  .contact-form-buttom.nav {
+    font-size: 2.5vw;
+    display: none;
   }
 }
 
